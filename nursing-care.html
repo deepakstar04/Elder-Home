@@ -21,6 +21,28 @@
   <script type="module" src="/js/cardContainer.js"></script>
   <script type="module" src="/js/googleReviews.js"></script>
   <script type="module" src="/js/gallery.js"></script>
+
+   <style>
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeUp {
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .glass {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
 </head>
 
 <body class="bg-gray-100">
@@ -287,7 +309,171 @@
 
   <!-- Content will be here -->
  
-   
+    <!-- HERO / IMAGE SECTION -->
+  <section class="relative h-[500px] flex items-center justify-center text-center">
+
+    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309"
+         class="absolute inset-0 w-full h-full object-cover" />
+
+    <div class="absolute inset-0 bg-blue-900/60"></div>
+
+    <div class="relative z-10 text-white px-6 animate-fadeUp">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Compassionate Nursing Care
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg md:text-xl opacity-90">
+        Professional, personalized healthcare services designed for comfort,
+        dignity, and peace of mind in assisted living.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES SECTION -->
+  <section class="py-20 px-6 md:px-16">
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Card -->
+      <div class="relative rounded-3xl overflow-hidden shadow-xl group">
+
+        <img src="/images/Gallery/care home.jpg"
+             class="h-72 w-full object-cover group-hover:scale-110 transition duration-500">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-xl font-semibold mb-2">Medication Management</h3>
+          <p class="text-sm opacity-90">
+            Accurate medication tracking and administration by licensed nurses.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="relative rounded-3xl overflow-hidden shadow-xl group">
+
+        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289"
+             class="h-72 w-full object-cover group-hover:scale-110 transition duration-500">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-xl font-semibold mb-2">24/7 Health Monitoring</h3>
+          <p class="text-sm opacity-90">
+            Continuous monitoring for safety, early detection, and peace of mind.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="relative rounded-3xl overflow-hidden shadow-xl group">
+
+        <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b"
+             class="h-72 w-full object-cover group-hover:scale-110 transition duration-500">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-xl font-semibold mb-2">Personal Care</h3>
+          <p class="text-sm opacity-90">
+            Daily assistance with hygiene, mobility, and comfort needs.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-20 px-6 md:px-16">
+
+    <div class="max-w-6xl mx-auto px-4 text-start animate-fadeUp">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Why Choose Our Nursing Care?
+      </h2>
+      <p class="max-w-3xl mx-auto text-lg md:text-xl opacity-90 mb-10">
+        Our nursing care is designed to provide comprehensive support, ensuring
+        the health, safety, and happiness of our residents.
+      </p>
+      <ul class="space-y-4 text-lg">
+        <li>✔ Licensed and Compassionate Nursing Staff</li>
+        <li>✔ Personalized Care Plans Tailored to Each Resident</li>
+        <li>✔ State-of-the-Art Medical Equipment and Facilities</li>
+        <li>✔ Holistic Approach to Physical and Emotional Well-being</li>
+        <li>✔ Strong Focus on Safety, Dignity, and Respect</li>
+      </ul>
+      <h3 class="text-2xl font-semibold mt-10 text-blue-600">
+        Experience the Difference of Quality Nursing Care at Our Assisted Living Home
+      </h3>
+      <p class="text-lg text-gray-600">
+        Discover why families trust us for their loved ones' care needs.
+      </p>
+      <button onClick="window.location.href='/contact.html'"
+        class="mt-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full shadow-lg hover:scale-105 transition duration-300">
+        Book a Consultation
+      </button>
+    </div>
+    <div >
+      <h3 class="text-2xl font-semibold mt-10 text-blue-600"> 
+        Nursing Care Services in Noida and Delhi NCR
+      </h3>
+
+      <p class="text-lg text-gray-600 mt-4">
+        At Quality Elder Home, we provide top-tier nursing care services in Noida and Delhi NCR, ensuring that our elderly residents receive the best possible medical attention and support. Our team of licensed nurses is available 24/7 to assist with medication management, health monitoring, and personal care needs. We understand the unique challenges that come with aging, and our compassionate staff is dedicated to providing personalized care plans that promote comfort, dignity, and overall well-being. Whether it's managing chronic conditions or providing post-hospital recovery support, our nursing care services are designed to enhance the quality of life for our residents and give their families peace of mind.
+      </p>
+      <p class="text-lg text-gray-600">
+        Our nursing care services in Noida and Delhi NCR are not just about medical support; they are about creating a nurturing environment where seniors can thrive. We focus on holistic care that addresses both physical and emotional needs, ensuring that our residents feel valued and respected. With state-of-the-art facilities and a dedicated team, we strive to provide an exceptional level of care that sets us apart as the preferred choice for elderly care in the region.
+      </p>
+
+    </div>
+      
+
+
+  </section>
+
+  <!-- FEATURE / GLASS SECTION -->
+  <section class="px-6 md:px-16 pb-20">
+
+    <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-10 text-white relative overflow-hidden">
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- Text -->
+        <div class="animate-fadeUp">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Specialized Elderly Care
+          </h2>
+          <p class="opacity-90 mb-6">
+            Our trained professionals provide compassionate care for chronic
+            conditions, post-hospital recovery, and memory-related illnesses.
+          </p>
+
+          <ul class="space-y-3">
+            <li>✔ Chronic Disease Management</li>
+            <li>✔ Dementia & Alzheimer’s Support</li>
+            <li>✔ Emergency Medical Response</li>
+          </ul>
+        </div>
+
+        <!-- Image with glass effect -->
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef"
+               class="rounded-2xl shadow-2xl">
+
+          <div class="absolute -bottom-6 -left-6 glass p-6 rounded-2xl text-gray-800 shadow-lg">
+            <p class="text-sm font-semibold">Trusted by Families</p>
+            <h3 class="text-2xl font-bold text-blue-600">98% Satisfaction</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
 
 
 
